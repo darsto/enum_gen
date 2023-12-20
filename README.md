@@ -1,5 +1,7 @@
 # enum_gen
 
+Note: Generating structs and the enum variants incredibly confuses the Rust analyzer to the point it just stops giving any hints, and also stops detecting even syntax errors. This is not problem when Rust structures are laid out naturally in the code, so this library is now archived, and another was developed to serve a similar purpose - https://github.com/darsto/genmatch
+
 Provides the `#[enum_gen]` procedural macro to generate structures from enum variants.
 The additional `#[enum_gen_match_self]` and `#[enum_gen_match_id]` macros allow automatically generating a match expression for the variants.
 
